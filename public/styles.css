@@ -1,0 +1,95 @@
+
+body{
+    background-color: #b9f5fb;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* HOME EJS */
+.navigation{
+    background-color: #2a83ef;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 1rem;
+    letter-spacing: 5px;
+}
+
+.nav-title{
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+.nav-title:hover{
+    color: yellow;
+}
+
+.carousel-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FED1EF;
+    height: 40rem;
+}
+
+.image{
+    height: 30rem;
+    width: 30rem;
+}
+
+.btn-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A3E4DB;
+    height: 40rem;
+}
+
+.home-buttons-block{
+    display: flex;
+    align-items: center;
+}
+
+.register-button{
+    /* margin-left: 2rem; */
+    margin-right: 2rem;
+}
+
+.login-button{
+    display: inline-block;
+}
+
+.home-button {
+    background: #faa8df;
+    background-image: -webkit-linear-gradient(top, #faa8df, #f213a8);
+    background-image: -moz-linear-gradient(top, #faa8df, #f213a8);
+    background-image: -ms-linear-gradient(top, #faa8df, #f213a8);
+    background-image: -o-linear-gradient(top, #faa8df, #f213a8);
+    background-image: linear-gradient(to bottom, #faa8df, #f213a8);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    border-width: 0;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 15px 25px 16px 25px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.home-button:hover {
+    background: #9c00f7;
+    text-decoration: none;
+}
+
+/* REGISTER EJS */
+.headings{
+    color: blue;
+
+}

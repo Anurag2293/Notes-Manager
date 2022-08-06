@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+    <div class="container mt-5">
+        <h1>Welcome to your Notes page.</h1>
+        <hr>
+
+        <h3>Add a new Note!</h3>
+        <div class="card">      
+            <div class="card-body">
+                <form action="/notes" method="POST">
+                    <div class="mb-3">
+                        <label for="note-title" class="form-label">Note Topic</label>
+                        <input type="text" class="form-control" id="noteTopic" placeholder="e.g. The Perfect evening" name="topic">
+                    </div>
+                    <div class="mb-3">
+                        <label for="note-content" class="form-label">Content</label>
+                        <textarea class="form-control" id="noteContent" rows="8" placeholder="Markdown is enabled" name="content"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" name="username" value=<%= username %>  >Add Note</button>
+                </form> 
+            </div>
+        </div> 
+        
+        <hr>
+        <h3>Review previous Notes!</h3>
+        <% notes.forEach(function(note){ %>
+            <h2>
+                <%= note.topic %>
+            </h2>
+            <p>
+                <%= note.content %>
+            </p>
+        <% }) %>
+    </div>
+
+<%- include('partials/footer') %>
